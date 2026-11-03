@@ -1,0 +1,19 @@
+{
+  "precision": "fp16",
+  "rounds": 20,
+  "local_epochs": 5,
+  "clients": 5,
+  "seed_server": 42,
+  "seed_client_rule": "42 + client_id",
+  "model": "MLP 54-64-32-1",
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "downlink": "fp32",
+  "uplink": "fp16",
+  "scaling": "existing client-local scalers (not harmonised)",
+  "thresholds": [
+    0.3,
+    0.5
+  ]
+}
