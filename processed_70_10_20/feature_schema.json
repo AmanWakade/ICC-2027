@@ -1,0 +1,247 @@
+{
+  "split": "70/10/20",
+  "fit_partition": "pooled training only",
+  "preprocessing": "shared pooled-training median imputation + StandardScaler; fixed one-hot schema",
+  "privacy_caveat": "Pooled training records were used to compute shared preprocessing statistics. This preprocessing stage is not itself privacy-preserving or fully federated.",
+  "features": {
+    "numeric": [
+      "AGE",
+      "BMI_CALC",
+      "CREAT_TRR",
+      "AGE_DON",
+      "BMI_DON_CALC",
+      "CREAT_DON",
+      "HLAMIS",
+      "DAYSWAIT_CHRON",
+      "DISTANCE",
+      "NPKID",
+      "COLD_ISCH_KI"
+    ],
+    "categorical": [
+      "GENDER",
+      "DIAB",
+      "DIAL_TRR",
+      "PREV_KI_TX",
+      "GENDER_DON",
+      "NON_HRT_DON",
+      "ABO",
+      "ABO_DON",
+      "PUMP_KI"
+    ],
+    "categorical_values": {
+      "GENDER": [
+        "F",
+        "M",
+        "MISSING"
+      ],
+      "DIAB": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "998",
+        "MISSING"
+      ],
+      "DIAL_TRR": [
+        "N",
+        "Y",
+        "MISSING"
+      ],
+      "PREV_KI_TX": [
+        "N",
+        "Y",
+        "MISSING"
+      ],
+      "GENDER_DON": [
+        "F",
+        "M",
+        "MISSING"
+      ],
+      "NON_HRT_DON": [
+        "N",
+        "Y",
+        "MISSING"
+      ],
+      "ABO": [
+        "O",
+        "A",
+        "A1",
+        "A2",
+        "B",
+        "AB",
+        "A1B",
+        "A2B",
+        "MISSING"
+      ],
+      "ABO_DON": [
+        "O",
+        "A",
+        "A1",
+        "A2",
+        "B",
+        "AB",
+        "A1B",
+        "A2B",
+        "MISSING"
+      ],
+      "PUMP_KI": [
+        "N",
+        "Y",
+        "MISSING"
+      ]
+    },
+    "encoded_names": [
+      "numeric__AGE",
+      "numeric__BMI_CALC",
+      "numeric__CREAT_TRR",
+      "numeric__AGE_DON",
+      "numeric__BMI_DON_CALC",
+      "numeric__CREAT_DON",
+      "numeric__HLAMIS",
+      "numeric__DAYSWAIT_CHRON",
+      "numeric__DISTANCE",
+      "numeric__NPKID",
+      "numeric__COLD_ISCH_KI",
+      "categorical__GENDER_F",
+      "categorical__GENDER_M",
+      "categorical__GENDER_MISSING",
+      "categorical__DIAB_1",
+      "categorical__DIAB_2",
+      "categorical__DIAB_3",
+      "categorical__DIAB_4",
+      "categorical__DIAB_5",
+      "categorical__DIAB_998",
+      "categorical__DIAB_MISSING",
+      "categorical__DIAL_TRR_N",
+      "categorical__DIAL_TRR_Y",
+      "categorical__DIAL_TRR_MISSING",
+      "categorical__PREV_KI_TX_N",
+      "categorical__PREV_KI_TX_Y",
+      "categorical__PREV_KI_TX_MISSING",
+      "categorical__GENDER_DON_F",
+      "categorical__GENDER_DON_M",
+      "categorical__GENDER_DON_MISSING",
+      "categorical__NON_HRT_DON_N",
+      "categorical__NON_HRT_DON_Y",
+      "categorical__NON_HRT_DON_MISSING",
+      "categorical__ABO_O",
+      "categorical__ABO_A",
+      "categorical__ABO_A1",
+      "categorical__ABO_A2",
+      "categorical__ABO_B",
+      "categorical__ABO_AB",
+      "categorical__ABO_A1B",
+      "categorical__ABO_A2B",
+      "categorical__ABO_MISSING",
+      "categorical__ABO_DON_O",
+      "categorical__ABO_DON_A",
+      "categorical__ABO_DON_A1",
+      "categorical__ABO_DON_A2",
+      "categorical__ABO_DON_B",
+      "categorical__ABO_DON_AB",
+      "categorical__ABO_DON_A1B",
+      "categorical__ABO_DON_A2B",
+      "categorical__ABO_DON_MISSING",
+      "categorical__PUMP_KI_N",
+      "categorical__PUMP_KI_Y",
+      "categorical__PUMP_KI_MISSING"
+    ]
+  },
+  "pending_checks": [
+    "Verify DIAB=998 against OPTN dictionary",
+    "Verify availability/timing of COLD_ISCH_KI and PUMP_KI"
+  ],
+  "summary": {
+    "centralised_train": {
+      "records": 21004,
+      "positives": 5317,
+      "dimensions": 54
+    },
+    "centralised_val": {
+      "records": 3001,
+      "positives": 760,
+      "dimensions": 54
+    },
+    "centralised_test": {
+      "records": 6002,
+      "positives": 1520,
+      "dimensions": 54
+    },
+    "client_1_train": {
+      "records": 4586,
+      "positives": 1308,
+      "dimensions": 54
+    },
+    "client_1_val": {
+      "records": 640,
+      "positives": 182,
+      "dimensions": 54
+    },
+    "client_1_test": {
+      "records": 1266,
+      "positives": 361,
+      "dimensions": 54
+    },
+    "client_2_train": {
+      "records": 4141,
+      "positives": 679,
+      "dimensions": 54
+    },
+    "client_2_val": {
+      "records": 588,
+      "positives": 98,
+      "dimensions": 54
+    },
+    "client_2_test": {
+      "records": 1211,
+      "positives": 211,
+      "dimensions": 54
+    },
+    "client_3_train": {
+      "records": 4181,
+      "positives": 1063,
+      "dimensions": 54
+    },
+    "client_3_val": {
+      "records": 582,
+      "positives": 154,
+      "dimensions": 54
+    },
+    "client_3_test": {
+      "records": 1173,
+      "positives": 293,
+      "dimensions": 54
+    },
+    "client_4_train": {
+      "records": 4133,
+      "positives": 902,
+      "dimensions": 54
+    },
+    "client_4_val": {
+      "records": 615,
+      "positives": 134,
+      "dimensions": 54
+    },
+    "client_4_test": {
+      "records": 1173,
+      "positives": 253,
+      "dimensions": 54
+    },
+    "client_5_train": {
+      "records": 3963,
+      "positives": 1365,
+      "dimensions": 54
+    },
+    "client_5_val": {
+      "records": 576,
+      "positives": 192,
+      "dimensions": 54
+    },
+    "client_5_test": {
+      "records": 1179,
+      "positives": 402,
+      "dimensions": 54
+    }
+  }
+}
