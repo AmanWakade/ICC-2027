@@ -1,0 +1,18 @@
+{
+  "requested_ratio": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "selection": {
+    "score": 0.006941672794089915,
+    "seed": 43,
+    "fold": 8
+  },
+  "counts": {
+    "train": 21004,
+    "validation": 3001,
+    "test": 6002
+  },
+  "note": "Original test held unchanged; 8-fold patient-grouped validation approximates 12.5% of original training records."
+}

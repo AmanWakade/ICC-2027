@@ -1,0 +1,26 @@
+Client,Centre,Feature,Timing_Concern,Present
+1,21080,COLD_ISCH_KI,Available after cold ischaemia duration is known,True
+1,21080,PUMP_KI,Check whether recorded before prediction time,True
+1,21080,CREAT_TRR,Confirm measurement is pre-transplant,True
+1,21080,HLAMIS,Confirm matching information is available,True
+1,21080,DISTANCE,Confirm donor-recipient logistics timing,True
+2,14942,COLD_ISCH_KI,Available after cold ischaemia duration is known,True
+2,14942,PUMP_KI,Check whether recorded before prediction time,True
+2,14942,CREAT_TRR,Confirm measurement is pre-transplant,True
+2,14942,HLAMIS,Confirm matching information is available,True
+2,14942,DISTANCE,Confirm donor-recipient logistics timing,True
+3,07161,COLD_ISCH_KI,Available after cold ischaemia duration is known,True
+3,07161,PUMP_KI,Check whether recorded before prediction time,True
+3,07161,CREAT_TRR,Confirm measurement is pre-transplant,True
+3,07161,HLAMIS,Confirm matching information is available,True
+3,07161,DISTANCE,Confirm donor-recipient logistics timing,True
+4,25110,COLD_ISCH_KI,Available after cold ischaemia duration is known,True
+4,25110,PUMP_KI,Check whether recorded before prediction time,True
+4,25110,CREAT_TRR,Confirm measurement is pre-transplant,True
+4,25110,HLAMIS,Confirm matching information is available,True
+4,25110,DISTANCE,Confirm donor-recipient logistics timing,True
+5,23901,COLD_ISCH_KI,Available after cold ischaemia duration is known,True
+5,23901,PUMP_KI,Check whether recorded before prediction time,True
+5,23901,CREAT_TRR,Confirm measurement is pre-transplant,True
+5,23901,HLAMIS,Confirm matching information is available,True
+5,23901,DISTANCE,Confirm donor-recipient logistics timing,True
